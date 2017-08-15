@@ -10,6 +10,8 @@ var searchData=
   ['sp_5fimem',['sp_imem',['../classultra64_1_1_m_m_u.html#abf6db7a046cc2b6146d3e52327d69bdb',1,'ultra64::MMU']]],
   ['sp_5fregisters',['sp_registers',['../classultra64_1_1_m_m_u.html#a9ca940d08ce7429fe1cd2440bc508800',1,'ultra64::MMU']]],
   ['sp_5fregisters2',['sp_registers2',['../classultra64_1_1_m_m_u.html#aad78b94bfb2096b563b7de68cddca76c',1,'ultra64::MMU']]],
+  ['sp_5fstatus_5fbroke',['SP_STATUS_BROKE',['../memory_8h.html#ab9c7c6fb240cdc327b4315c0c88bc353',1,'memory.h']]],
+  ['sp_5fstatus_5fhalt',['SP_STATUS_HALT',['../memory_8h.html#a4605e40aeb4f88b233c2b3a900dc7445',1,'memory.h']]],
   ['special',['special',['../classultra64_1_1r4300.html#aeb7775275197e58bc21e3b801567120e',1,'ultra64::r4300']]],
   ['special_2ecpp',['special.cpp',['../special_8cpp.html',1,'']]],
   ['special_5fnot_5fimplemented',['special_not_implemented',['../classultra64_1_1r4300.html#aa897d0fe9ea4fa3da5ad238fc53c1437',1,'ultra64::r4300']]],
