@@ -1,5 +1,5 @@
 #ifndef _ULTRA64_RSP_H
-#define _ULTRA64_RSP_h
+#define _ULTRA64_RSP_H
 
 #include <cstdint>
 

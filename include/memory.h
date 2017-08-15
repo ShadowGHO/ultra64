@@ -51,4 +51,7 @@ namespace ultra64
 }
 
 extern ultra64::MMU *mmu;
+
+#define SP_STATUS_HALT		0x00000001
+#define SP_STATUS_BROKE		0x00000002
 #endif
