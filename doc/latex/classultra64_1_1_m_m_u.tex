@@ -1,0 +1,254 @@
+\hypertarget{classultra64_1_1_m_m_u}{}\section{ultra64\+:\+:M\+MU Class Reference}
+\label{classultra64_1_1_m_m_u}\index{ultra64\+::\+M\+MU@{ultra64\+::\+M\+MU}}
+
+
+{\ttfamily \#include $<$memory.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classultra64_1_1_m_m_u_a2fdb1cba73825c3988f2a1216e806c7c}{M\+MU} ()
+\item 
+\hyperlink{classultra64_1_1_m_m_u_a9ee9394ce2502116d7773d5f6123a24e}{$\sim$\+M\+MU} ()
+\item 
+void \hyperlink{classultra64_1_1_m_m_u_aba8d57fd9862ade57d54b1581dd93682}{attach\+\_\+rom} (unsigned char $\ast$\hyperlink{classultra64_1_1_m_m_u_a7ad1ee24b85de6513bf53ba6c963f529}{rom}, size\+\_\+t sz)
+\item 
+uint8\+\_\+t \hyperlink{classultra64_1_1_m_m_u_a8cdfede1aebd137ae20dfda84f0e23a1}{read\+\_\+byte} (uint32\+\_\+t addr)
+\item 
+uint16\+\_\+t \hyperlink{classultra64_1_1_m_m_u_a0e4bb683637877aba6c5def53c719b0f}{read\+\_\+hword} (uint32\+\_\+t addr)
+\item 
+uint32\+\_\+t \hyperlink{classultra64_1_1_m_m_u_a894a894a4340798c457e7ad41c3dd2ff}{read\+\_\+word} (uint32\+\_\+t addr)
+\item 
+void \hyperlink{classultra64_1_1_m_m_u_aac98a1626ea3f4168c0a3c5ae6036289}{write\+\_\+byte} (uint32\+\_\+t addr, uint8\+\_\+t value)
+\item 
+void \hyperlink{classultra64_1_1_m_m_u_ab594e1f0fe4958b521af5408aab46456}{write\+\_\+hword} (uint32\+\_\+t addr, uint16\+\_\+t value)
+\item 
+void \hyperlink{classultra64_1_1_m_m_u_a4dd4d9827368407081996591918fee9c}{write\+\_\+word} (uint32\+\_\+t addr, uint32\+\_\+t value)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{structultra64_1_1memory__section}{memory\+\_\+section} \hyperlink{classultra64_1_1_m_m_u_a30dc6643202a4b3a435cd7458fb4b6b4}{get\+\_\+section} (uint32\+\_\+t addr)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned char $\ast$ \hyperlink{classultra64_1_1_m_m_u_a3c06ec9b1a0385a54e46aa1b6763d190}{pif\+\_\+rom} = new unsigned char\mbox{[}0x7\+B\+F\mbox{]}
+\item 
+unsigned char $\ast$ \hyperlink{classultra64_1_1_m_m_u_a9d041024d1764dde4738d401882e2c75}{pif\+\_\+ram} = new unsigned char\mbox{[}0x40\mbox{]}
+\item 
+unsigned char $\ast$ \hyperlink{classultra64_1_1_m_m_u_a7ad1ee24b85de6513bf53ba6c963f529}{rom} = nullptr
+\item 
+size\+\_\+t \hyperlink{classultra64_1_1_m_m_u_afb879907a642040c391b4fce51840564}{rom\+\_\+sz} = 0
+\item 
+unsigned char $\ast$ \hyperlink{classultra64_1_1_m_m_u_af1ecbc3316b0d24d31ef0c06264cc452}{rdram} = new unsigned char\mbox{[}0x400000\mbox{]}
+\item 
+unsigned char $\ast$ \hyperlink{classultra64_1_1_m_m_u_ae002e380f5261812fa2a6b37ab6dd9fa}{rdram\+\_\+registers} = new unsigned char\mbox{[}0x28\mbox{]}
+\item 
+unsigned char $\ast$ \hyperlink{classultra64_1_1_m_m_u_a860851cd6f4767cd238526e6fcadb0dc}{sp\+\_\+dmem} = new unsigned char\mbox{[}0x1000\mbox{]}
+\item 
+unsigned char $\ast$ \hyperlink{classultra64_1_1_m_m_u_abf6db7a046cc2b6146d3e52327d69bdb}{sp\+\_\+imem} = new unsigned char\mbox{[}0x1000\mbox{]}
+\item 
+unsigned char $\ast$ \hyperlink{classultra64_1_1_m_m_u_a9ca940d08ce7429fe1cd2440bc508800}{sp\+\_\+registers} = new unsigned char\mbox{[}0x20\mbox{]}
+\item 
+unsigned char $\ast$ \hyperlink{classultra64_1_1_m_m_u_aad78b94bfb2096b563b7de68cddca76c}{sp\+\_\+registers2} = new unsigned char\mbox{[}0x8\mbox{]}
+\item 
+unsigned char $\ast$ \hyperlink{classultra64_1_1_m_m_u_a3054f197e8e6b801272dc87d8678aed8}{pi\+\_\+registers} = new unsigned char\mbox{[}0x34\mbox{]}
+\item 
+unsigned char $\ast$ \hyperlink{classultra64_1_1_m_m_u_ab72c6d87f83e2c99ed0e2e9f43f1f240}{vi\+\_\+registers} = new unsigned char\mbox{[}0x38\mbox{]}
+\item 
+unsigned char $\ast$ \hyperlink{classultra64_1_1_m_m_u_a30a9501b79dbeffb191b7f89c375e9e0}{ai\+\_\+registers} = new unsigned char\mbox{[}0x18\mbox{]}
+\item 
+unsigned char $\ast$ \hyperlink{classultra64_1_1_m_m_u_a9d4a71c847de246e9a23149921e7312e}{dp\+\_\+command\+\_\+registers} = new unsigned char\mbox{[}0x20\mbox{]}
+\item 
+unsigned char $\ast$ \hyperlink{classultra64_1_1_m_m_u_af6b87f01506b320306aefde9d1d7de8c}{dp\+\_\+span\+\_\+registers} = new unsigned char\mbox{[}0x10\mbox{]}
+\item 
+unsigned char $\ast$ \hyperlink{classultra64_1_1_m_m_u_a470447b5a22c8081ee5cd1da7f3c4724}{mi\+\_\+registers} = new unsigned char\mbox{[}0x10\mbox{]}
+\item 
+unsigned char $\ast$ \hyperlink{classultra64_1_1_m_m_u_a73128f9d67e5ebb8182c4f57d2b5af3f}{ri\+\_\+registers} = new unsigned char\mbox{[}0x20\mbox{]}
+\item 
+unsigned char $\ast$ \hyperlink{classultra64_1_1_m_m_u_a0256b081d410cd7375f4837326326dd9}{si\+\_\+registers} = new unsigned char\mbox{[}0x1\+C\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classultra64_1_1_m_m_u_a2fdb1cba73825c3988f2a1216e806c7c}\label{classultra64_1_1_m_m_u_a2fdb1cba73825c3988f2a1216e806c7c}} 
+\index{ultra64\+::\+M\+MU@{ultra64\+::\+M\+MU}!M\+MU@{M\+MU}}
+\index{M\+MU@{M\+MU}!ultra64\+::\+M\+MU@{ultra64\+::\+M\+MU}}
+\subsubsection{\texorpdfstring{M\+M\+U()}{MMU()}}
+{\footnotesize\ttfamily ultra64\+::\+M\+M\+U\+::\+M\+MU (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classultra64_1_1_m_m_u_a9ee9394ce2502116d7773d5f6123a24e}\label{classultra64_1_1_m_m_u_a9ee9394ce2502116d7773d5f6123a24e}} 
+\index{ultra64\+::\+M\+MU@{ultra64\+::\+M\+MU}!````~M\+MU@{$\sim$\+M\+MU}}
+\index{````~M\+MU@{$\sim$\+M\+MU}!ultra64\+::\+M\+MU@{ultra64\+::\+M\+MU}}
+\subsubsection{\texorpdfstring{$\sim$\+M\+M\+U()}{~MMU()}}
+{\footnotesize\ttfamily ultra64\+::\+M\+M\+U\+::$\sim$\+M\+MU (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classultra64_1_1_m_m_u_aba8d57fd9862ade57d54b1581dd93682}\label{classultra64_1_1_m_m_u_aba8d57fd9862ade57d54b1581dd93682}} 
+\index{ultra64\+::\+M\+MU@{ultra64\+::\+M\+MU}!attach\+\_\+rom@{attach\+\_\+rom}}
+\index{attach\+\_\+rom@{attach\+\_\+rom}!ultra64\+::\+M\+MU@{ultra64\+::\+M\+MU}}
+\subsubsection{\texorpdfstring{attach\+\_\+rom()}{attach\_rom()}}
+{\footnotesize\ttfamily void ultra64\+::\+M\+M\+U\+::attach\+\_\+rom (\begin{DoxyParamCaption}\item[{unsigned char $\ast$}]{rom,  }\item[{size\+\_\+t}]{sz }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classultra64_1_1_m_m_u_a30dc6643202a4b3a435cd7458fb4b6b4}\label{classultra64_1_1_m_m_u_a30dc6643202a4b3a435cd7458fb4b6b4}} 
+\index{ultra64\+::\+M\+MU@{ultra64\+::\+M\+MU}!get\+\_\+section@{get\+\_\+section}}
+\index{get\+\_\+section@{get\+\_\+section}!ultra64\+::\+M\+MU@{ultra64\+::\+M\+MU}}
+\subsubsection{\texorpdfstring{get\+\_\+section()}{get\_section()}}
+{\footnotesize\ttfamily \hyperlink{structultra64_1_1memory__section}{memory\+\_\+section} ultra64\+::\+M\+M\+U\+::get\+\_\+section (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{addr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classultra64_1_1_m_m_u_a8cdfede1aebd137ae20dfda84f0e23a1}\label{classultra64_1_1_m_m_u_a8cdfede1aebd137ae20dfda84f0e23a1}} 
+\index{ultra64\+::\+M\+MU@{ultra64\+::\+M\+MU}!read\+\_\+byte@{read\+\_\+byte}}
+\index{read\+\_\+byte@{read\+\_\+byte}!ultra64\+::\+M\+MU@{ultra64\+::\+M\+MU}}
+\subsubsection{\texorpdfstring{read\+\_\+byte()}{read\_byte()}}
+{\footnotesize\ttfamily uint8\+\_\+t ultra64\+::\+M\+M\+U\+::read\+\_\+byte (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{addr }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classultra64_1_1_m_m_u_a0e4bb683637877aba6c5def53c719b0f}\label{classultra64_1_1_m_m_u_a0e4bb683637877aba6c5def53c719b0f}} 
+\index{ultra64\+::\+M\+MU@{ultra64\+::\+M\+MU}!read\+\_\+hword@{read\+\_\+hword}}
+\index{read\+\_\+hword@{read\+\_\+hword}!ultra64\+::\+M\+MU@{ultra64\+::\+M\+MU}}
+\subsubsection{\texorpdfstring{read\+\_\+hword()}{read\_hword()}}
+{\footnotesize\ttfamily uint16\+\_\+t ultra64\+::\+M\+M\+U\+::read\+\_\+hword (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{addr }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classultra64_1_1_m_m_u_a894a894a4340798c457e7ad41c3dd2ff}\label{classultra64_1_1_m_m_u_a894a894a4340798c457e7ad41c3dd2ff}} 
+\index{ultra64\+::\+M\+MU@{ultra64\+::\+M\+MU}!read\+\_\+word@{read\+\_\+word}}
+\index{read\+\_\+word@{read\+\_\+word}!ultra64\+::\+M\+MU@{ultra64\+::\+M\+MU}}
+\subsubsection{\texorpdfstring{read\+\_\+word()}{read\_word()}}
+{\footnotesize\ttfamily uint32\+\_\+t ultra64\+::\+M\+M\+U\+::read\+\_\+word (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{addr }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classultra64_1_1_m_m_u_aac98a1626ea3f4168c0a3c5ae6036289}\label{classultra64_1_1_m_m_u_aac98a1626ea3f4168c0a3c5ae6036289}} 
+\index{ultra64\+::\+M\+MU@{ultra64\+::\+M\+MU}!write\+\_\+byte@{write\+\_\+byte}}
+\index{write\+\_\+byte@{write\+\_\+byte}!ultra64\+::\+M\+MU@{ultra64\+::\+M\+MU}}
+\subsubsection{\texorpdfstring{write\+\_\+byte()}{write\_byte()}}
+{\footnotesize\ttfamily void ultra64\+::\+M\+M\+U\+::write\+\_\+byte (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{addr,  }\item[{uint8\+\_\+t}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classultra64_1_1_m_m_u_ab594e1f0fe4958b521af5408aab46456}\label{classultra64_1_1_m_m_u_ab594e1f0fe4958b521af5408aab46456}} 
+\index{ultra64\+::\+M\+MU@{ultra64\+::\+M\+MU}!write\+\_\+hword@{write\+\_\+hword}}
+\index{write\+\_\+hword@{write\+\_\+hword}!ultra64\+::\+M\+MU@{ultra64\+::\+M\+MU}}
+\subsubsection{\texorpdfstring{write\+\_\+hword()}{write\_hword()}}
+{\footnotesize\ttfamily void ultra64\+::\+M\+M\+U\+::write\+\_\+hword (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{addr,  }\item[{uint16\+\_\+t}]{value }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classultra64_1_1_m_m_u_a4dd4d9827368407081996591918fee9c}\label{classultra64_1_1_m_m_u_a4dd4d9827368407081996591918fee9c}} 
+\index{ultra64\+::\+M\+MU@{ultra64\+::\+M\+MU}!write\+\_\+word@{write\+\_\+word}}
+\index{write\+\_\+word@{write\+\_\+word}!ultra64\+::\+M\+MU@{ultra64\+::\+M\+MU}}
+\subsubsection{\texorpdfstring{write\+\_\+word()}{write\_word()}}
+{\footnotesize\ttfamily void ultra64\+::\+M\+M\+U\+::write\+\_\+word (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{addr,  }\item[{uint32\+\_\+t}]{value }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{classultra64_1_1_m_m_u_a30a9501b79dbeffb191b7f89c375e9e0}\label{classultra64_1_1_m_m_u_a30a9501b79dbeffb191b7f89c375e9e0}} 
+\index{ultra64\+::\+M\+MU@{ultra64\+::\+M\+MU}!ai\+\_\+registers@{ai\+\_\+registers}}
+\index{ai\+\_\+registers@{ai\+\_\+registers}!ultra64\+::\+M\+MU@{ultra64\+::\+M\+MU}}
+\subsubsection{\texorpdfstring{ai\+\_\+registers}{ai\_registers}}
+{\footnotesize\ttfamily unsigned char$\ast$ ultra64\+::\+M\+M\+U\+::ai\+\_\+registers = new unsigned char\mbox{[}0x18\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classultra64_1_1_m_m_u_a9d4a71c847de246e9a23149921e7312e}\label{classultra64_1_1_m_m_u_a9d4a71c847de246e9a23149921e7312e}} 
+\index{ultra64\+::\+M\+MU@{ultra64\+::\+M\+MU}!dp\+\_\+command\+\_\+registers@{dp\+\_\+command\+\_\+registers}}
+\index{dp\+\_\+command\+\_\+registers@{dp\+\_\+command\+\_\+registers}!ultra64\+::\+M\+MU@{ultra64\+::\+M\+MU}}
+\subsubsection{\texorpdfstring{dp\+\_\+command\+\_\+registers}{dp\_command\_registers}}
+{\footnotesize\ttfamily unsigned char$\ast$ ultra64\+::\+M\+M\+U\+::dp\+\_\+command\+\_\+registers = new unsigned char\mbox{[}0x20\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classultra64_1_1_m_m_u_af6b87f01506b320306aefde9d1d7de8c}\label{classultra64_1_1_m_m_u_af6b87f01506b320306aefde9d1d7de8c}} 
+\index{ultra64\+::\+M\+MU@{ultra64\+::\+M\+MU}!dp\+\_\+span\+\_\+registers@{dp\+\_\+span\+\_\+registers}}
+\index{dp\+\_\+span\+\_\+registers@{dp\+\_\+span\+\_\+registers}!ultra64\+::\+M\+MU@{ultra64\+::\+M\+MU}}
+\subsubsection{\texorpdfstring{dp\+\_\+span\+\_\+registers}{dp\_span\_registers}}
+{\footnotesize\ttfamily unsigned char$\ast$ ultra64\+::\+M\+M\+U\+::dp\+\_\+span\+\_\+registers = new unsigned char\mbox{[}0x10\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classultra64_1_1_m_m_u_a470447b5a22c8081ee5cd1da7f3c4724}\label{classultra64_1_1_m_m_u_a470447b5a22c8081ee5cd1da7f3c4724}} 
+\index{ultra64\+::\+M\+MU@{ultra64\+::\+M\+MU}!mi\+\_\+registers@{mi\+\_\+registers}}
+\index{mi\+\_\+registers@{mi\+\_\+registers}!ultra64\+::\+M\+MU@{ultra64\+::\+M\+MU}}
+\subsubsection{\texorpdfstring{mi\+\_\+registers}{mi\_registers}}
+{\footnotesize\ttfamily unsigned char$\ast$ ultra64\+::\+M\+M\+U\+::mi\+\_\+registers = new unsigned char\mbox{[}0x10\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classultra64_1_1_m_m_u_a3054f197e8e6b801272dc87d8678aed8}\label{classultra64_1_1_m_m_u_a3054f197e8e6b801272dc87d8678aed8}} 
+\index{ultra64\+::\+M\+MU@{ultra64\+::\+M\+MU}!pi\+\_\+registers@{pi\+\_\+registers}}
+\index{pi\+\_\+registers@{pi\+\_\+registers}!ultra64\+::\+M\+MU@{ultra64\+::\+M\+MU}}
+\subsubsection{\texorpdfstring{pi\+\_\+registers}{pi\_registers}}
+{\footnotesize\ttfamily unsigned char$\ast$ ultra64\+::\+M\+M\+U\+::pi\+\_\+registers = new unsigned char\mbox{[}0x34\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classultra64_1_1_m_m_u_a9d041024d1764dde4738d401882e2c75}\label{classultra64_1_1_m_m_u_a9d041024d1764dde4738d401882e2c75}} 
+\index{ultra64\+::\+M\+MU@{ultra64\+::\+M\+MU}!pif\+\_\+ram@{pif\+\_\+ram}}
+\index{pif\+\_\+ram@{pif\+\_\+ram}!ultra64\+::\+M\+MU@{ultra64\+::\+M\+MU}}
+\subsubsection{\texorpdfstring{pif\+\_\+ram}{pif\_ram}}
+{\footnotesize\ttfamily unsigned char$\ast$ ultra64\+::\+M\+M\+U\+::pif\+\_\+ram = new unsigned char\mbox{[}0x40\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classultra64_1_1_m_m_u_a3c06ec9b1a0385a54e46aa1b6763d190}\label{classultra64_1_1_m_m_u_a3c06ec9b1a0385a54e46aa1b6763d190}} 
+\index{ultra64\+::\+M\+MU@{ultra64\+::\+M\+MU}!pif\+\_\+rom@{pif\+\_\+rom}}
+\index{pif\+\_\+rom@{pif\+\_\+rom}!ultra64\+::\+M\+MU@{ultra64\+::\+M\+MU}}
+\subsubsection{\texorpdfstring{pif\+\_\+rom}{pif\_rom}}
+{\footnotesize\ttfamily unsigned char$\ast$ ultra64\+::\+M\+M\+U\+::pif\+\_\+rom = new unsigned char\mbox{[}0x7\+B\+F\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classultra64_1_1_m_m_u_af1ecbc3316b0d24d31ef0c06264cc452}\label{classultra64_1_1_m_m_u_af1ecbc3316b0d24d31ef0c06264cc452}} 
+\index{ultra64\+::\+M\+MU@{ultra64\+::\+M\+MU}!rdram@{rdram}}
+\index{rdram@{rdram}!ultra64\+::\+M\+MU@{ultra64\+::\+M\+MU}}
+\subsubsection{\texorpdfstring{rdram}{rdram}}
+{\footnotesize\ttfamily unsigned char$\ast$ ultra64\+::\+M\+M\+U\+::rdram = new unsigned char\mbox{[}0x400000\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classultra64_1_1_m_m_u_ae002e380f5261812fa2a6b37ab6dd9fa}\label{classultra64_1_1_m_m_u_ae002e380f5261812fa2a6b37ab6dd9fa}} 
+\index{ultra64\+::\+M\+MU@{ultra64\+::\+M\+MU}!rdram\+\_\+registers@{rdram\+\_\+registers}}
+\index{rdram\+\_\+registers@{rdram\+\_\+registers}!ultra64\+::\+M\+MU@{ultra64\+::\+M\+MU}}
+\subsubsection{\texorpdfstring{rdram\+\_\+registers}{rdram\_registers}}
+{\footnotesize\ttfamily unsigned char$\ast$ ultra64\+::\+M\+M\+U\+::rdram\+\_\+registers = new unsigned char\mbox{[}0x28\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classultra64_1_1_m_m_u_a73128f9d67e5ebb8182c4f57d2b5af3f}\label{classultra64_1_1_m_m_u_a73128f9d67e5ebb8182c4f57d2b5af3f}} 
+\index{ultra64\+::\+M\+MU@{ultra64\+::\+M\+MU}!ri\+\_\+registers@{ri\+\_\+registers}}
+\index{ri\+\_\+registers@{ri\+\_\+registers}!ultra64\+::\+M\+MU@{ultra64\+::\+M\+MU}}
+\subsubsection{\texorpdfstring{ri\+\_\+registers}{ri\_registers}}
+{\footnotesize\ttfamily unsigned char$\ast$ ultra64\+::\+M\+M\+U\+::ri\+\_\+registers = new unsigned char\mbox{[}0x20\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classultra64_1_1_m_m_u_a7ad1ee24b85de6513bf53ba6c963f529}\label{classultra64_1_1_m_m_u_a7ad1ee24b85de6513bf53ba6c963f529}} 
+\index{ultra64\+::\+M\+MU@{ultra64\+::\+M\+MU}!rom@{rom}}
+\index{rom@{rom}!ultra64\+::\+M\+MU@{ultra64\+::\+M\+MU}}
+\subsubsection{\texorpdfstring{rom}{rom}}
+{\footnotesize\ttfamily unsigned char$\ast$ ultra64\+::\+M\+M\+U\+::rom = nullptr\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classultra64_1_1_m_m_u_afb879907a642040c391b4fce51840564}\label{classultra64_1_1_m_m_u_afb879907a642040c391b4fce51840564}} 
+\index{ultra64\+::\+M\+MU@{ultra64\+::\+M\+MU}!rom\+\_\+sz@{rom\+\_\+sz}}
+\index{rom\+\_\+sz@{rom\+\_\+sz}!ultra64\+::\+M\+MU@{ultra64\+::\+M\+MU}}
+\subsubsection{\texorpdfstring{rom\+\_\+sz}{rom\_sz}}
+{\footnotesize\ttfamily size\+\_\+t ultra64\+::\+M\+M\+U\+::rom\+\_\+sz = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classultra64_1_1_m_m_u_a0256b081d410cd7375f4837326326dd9}\label{classultra64_1_1_m_m_u_a0256b081d410cd7375f4837326326dd9}} 
+\index{ultra64\+::\+M\+MU@{ultra64\+::\+M\+MU}!si\+\_\+registers@{si\+\_\+registers}}
+\index{si\+\_\+registers@{si\+\_\+registers}!ultra64\+::\+M\+MU@{ultra64\+::\+M\+MU}}
+\subsubsection{\texorpdfstring{si\+\_\+registers}{si\_registers}}
+{\footnotesize\ttfamily unsigned char$\ast$ ultra64\+::\+M\+M\+U\+::si\+\_\+registers = new unsigned char\mbox{[}0x1\+C\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classultra64_1_1_m_m_u_a860851cd6f4767cd238526e6fcadb0dc}\label{classultra64_1_1_m_m_u_a860851cd6f4767cd238526e6fcadb0dc}} 
+\index{ultra64\+::\+M\+MU@{ultra64\+::\+M\+MU}!sp\+\_\+dmem@{sp\+\_\+dmem}}
+\index{sp\+\_\+dmem@{sp\+\_\+dmem}!ultra64\+::\+M\+MU@{ultra64\+::\+M\+MU}}
+\subsubsection{\texorpdfstring{sp\+\_\+dmem}{sp\_dmem}}
+{\footnotesize\ttfamily unsigned char$\ast$ ultra64\+::\+M\+M\+U\+::sp\+\_\+dmem = new unsigned char\mbox{[}0x1000\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classultra64_1_1_m_m_u_abf6db7a046cc2b6146d3e52327d69bdb}\label{classultra64_1_1_m_m_u_abf6db7a046cc2b6146d3e52327d69bdb}} 
+\index{ultra64\+::\+M\+MU@{ultra64\+::\+M\+MU}!sp\+\_\+imem@{sp\+\_\+imem}}
+\index{sp\+\_\+imem@{sp\+\_\+imem}!ultra64\+::\+M\+MU@{ultra64\+::\+M\+MU}}
+\subsubsection{\texorpdfstring{sp\+\_\+imem}{sp\_imem}}
+{\footnotesize\ttfamily unsigned char$\ast$ ultra64\+::\+M\+M\+U\+::sp\+\_\+imem = new unsigned char\mbox{[}0x1000\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classultra64_1_1_m_m_u_a9ca940d08ce7429fe1cd2440bc508800}\label{classultra64_1_1_m_m_u_a9ca940d08ce7429fe1cd2440bc508800}} 
+\index{ultra64\+::\+M\+MU@{ultra64\+::\+M\+MU}!sp\+\_\+registers@{sp\+\_\+registers}}
+\index{sp\+\_\+registers@{sp\+\_\+registers}!ultra64\+::\+M\+MU@{ultra64\+::\+M\+MU}}
+\subsubsection{\texorpdfstring{sp\+\_\+registers}{sp\_registers}}
+{\footnotesize\ttfamily unsigned char$\ast$ ultra64\+::\+M\+M\+U\+::sp\+\_\+registers = new unsigned char\mbox{[}0x20\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classultra64_1_1_m_m_u_aad78b94bfb2096b563b7de68cddca76c}\label{classultra64_1_1_m_m_u_aad78b94bfb2096b563b7de68cddca76c}} 
+\index{ultra64\+::\+M\+MU@{ultra64\+::\+M\+MU}!sp\+\_\+registers2@{sp\+\_\+registers2}}
+\index{sp\+\_\+registers2@{sp\+\_\+registers2}!ultra64\+::\+M\+MU@{ultra64\+::\+M\+MU}}
+\subsubsection{\texorpdfstring{sp\+\_\+registers2}{sp\_registers2}}
+{\footnotesize\ttfamily unsigned char$\ast$ ultra64\+::\+M\+M\+U\+::sp\+\_\+registers2 = new unsigned char\mbox{[}0x8\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classultra64_1_1_m_m_u_ab72c6d87f83e2c99ed0e2e9f43f1f240}\label{classultra64_1_1_m_m_u_ab72c6d87f83e2c99ed0e2e9f43f1f240}} 
+\index{ultra64\+::\+M\+MU@{ultra64\+::\+M\+MU}!vi\+\_\+registers@{vi\+\_\+registers}}
+\index{vi\+\_\+registers@{vi\+\_\+registers}!ultra64\+::\+M\+MU@{ultra64\+::\+M\+MU}}
+\subsubsection{\texorpdfstring{vi\+\_\+registers}{vi\_registers}}
+{\footnotesize\ttfamily unsigned char$\ast$ ultra64\+::\+M\+M\+U\+::vi\+\_\+registers = new unsigned char\mbox{[}0x38\mbox{]}\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{memory_8h}{memory.\+h}\item 
+src/\hyperlink{memory_8cpp}{memory.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,95 @@
+\hypertarget{ultra64_8cpp}{}\section{src/ultra64.cpp File Reference}
+\label{ultra64_8cpp}\index{src/ultra64.\+cpp@{src/ultra64.\+cpp}}
+{\ttfamily \#include $<$wx/wx.\+h$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$chrono$>$}\newline
+{\ttfamily \#include $<$ultra64.\+h$>$}\newline
+{\ttfamily \#include $<$rom.\+h$>$}\newline
+{\ttfamily \#include $<$pif\+\_\+rom.\+h$>$}\newline
+{\ttfamily \#include $<$memory.\+h$>$}\newline
+{\ttfamily \#include $<$r4300.\+h$>$}\newline
+{\ttfamily \#include $<$rsp.\+h$>$}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{ultra64_8cpp_accff11565f9beef617e6c8933194ac2e}{open\+\_\+registers} ()
+\item 
+\hyperlink{ultra64_8cpp_a674edf43a34e3c23868ba0776090e393}{wx\+B\+E\+G\+I\+N\+\_\+\+E\+V\+E\+N\+T\+\_\+\+T\+A\+B\+LE} (\hyperlink{class_main_window}{Main\+Window}, wx\+Frame) \hyperlink{ultra64_8cpp_af4da478f031198d4059586257711913e}{wx\+E\+N\+D\+\_\+\+E\+V\+E\+N\+T\+\_\+\+T\+A\+B\+LE}() wx\+B\+E\+G\+I\+N\+\_\+\+E\+V\+E\+N\+T\+\_\+\+T\+A\+B\+LE(\hyperlink{class_debugger_window}{Debugger\+Window}
+\item 
+wx\+Frame \hyperlink{ultra64_8cpp_af4da478f031198d4059586257711913e}{wx\+E\+N\+D\+\_\+\+E\+V\+E\+N\+T\+\_\+\+T\+A\+B\+LE} () wx\+I\+M\+P\+L\+E\+M\+E\+N\+T\+\_\+\+A\+PP(\hyperlink{classwx_ultra64}{wx\+Ultra64})
+\item 
+void \hyperlink{ultra64_8cpp_a72de2859e060e665ed214a7cc99cb1f8}{open\+\_\+debugger} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classultra64_1_1_r_o_m}{ultra64\+::\+R\+OM} $\ast$ \hyperlink{ultra64_8cpp_a67d846c30b517df296af4adaf2a73851}{rom}
+\item 
+\hyperlink{classultra64_1_1_p_i_f___r_o_m}{ultra64\+::\+P\+I\+F\+\_\+\+R\+OM} $\ast$ \hyperlink{ultra64_8cpp_a40c33e14c30c42b41f1f4cbe2cb4e3b7}{pif\+\_\+rom}
+\item 
+\hyperlink{classultra64_1_1_m_m_u}{ultra64\+::\+M\+MU} $\ast$ \hyperlink{ultra64_8cpp_ad2faab063b0f86f630bf350495d65c18}{mmu} = new \hyperlink{classultra64_1_1_m_m_u}{ultra64\+::\+M\+MU}()
+\item 
+\hyperlink{classultra64_1_1r4300}{ultra64\+::r4300} $\ast$ \hyperlink{ultra64_8cpp_a677caae84e52c421b81b49cb6a69ef0a}{cpu} = new \hyperlink{classultra64_1_1r4300}{ultra64\+::r4300}()
+\item 
+\hyperlink{classultra64_1_1rsp}{ultra64\+::rsp} $\ast$ \hyperlink{ultra64_8cpp_a7d3e0d2c4dfd255c476715e9860f19b8}{rsp} = new \hyperlink{classultra64_1_1rsp}{ultra64\+::rsp}()
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{ultra64_8cpp_a72de2859e060e665ed214a7cc99cb1f8}\label{ultra64_8cpp_a72de2859e060e665ed214a7cc99cb1f8}} 
+\index{ultra64.\+cpp@{ultra64.\+cpp}!open\+\_\+debugger@{open\+\_\+debugger}}
+\index{open\+\_\+debugger@{open\+\_\+debugger}!ultra64.\+cpp@{ultra64.\+cpp}}
+\subsubsection{\texorpdfstring{open\+\_\+debugger()}{open\_debugger()}}
+{\footnotesize\ttfamily void open\+\_\+debugger (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ultra64_8cpp_accff11565f9beef617e6c8933194ac2e}\label{ultra64_8cpp_accff11565f9beef617e6c8933194ac2e}} 
+\index{ultra64.\+cpp@{ultra64.\+cpp}!open\+\_\+registers@{open\+\_\+registers}}
+\index{open\+\_\+registers@{open\+\_\+registers}!ultra64.\+cpp@{ultra64.\+cpp}}
+\subsubsection{\texorpdfstring{open\+\_\+registers()}{open\_registers()}}
+{\footnotesize\ttfamily void open\+\_\+registers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ultra64_8cpp_a674edf43a34e3c23868ba0776090e393}\label{ultra64_8cpp_a674edf43a34e3c23868ba0776090e393}} 
+\index{ultra64.\+cpp@{ultra64.\+cpp}!wx\+B\+E\+G\+I\+N\+\_\+\+E\+V\+E\+N\+T\+\_\+\+T\+A\+B\+LE@{wx\+B\+E\+G\+I\+N\+\_\+\+E\+V\+E\+N\+T\+\_\+\+T\+A\+B\+LE}}
+\index{wx\+B\+E\+G\+I\+N\+\_\+\+E\+V\+E\+N\+T\+\_\+\+T\+A\+B\+LE@{wx\+B\+E\+G\+I\+N\+\_\+\+E\+V\+E\+N\+T\+\_\+\+T\+A\+B\+LE}!ultra64.\+cpp@{ultra64.\+cpp}}
+\subsubsection{\texorpdfstring{wx\+B\+E\+G\+I\+N\+\_\+\+E\+V\+E\+N\+T\+\_\+\+T\+A\+B\+L\+E()}{wxBEGIN\_EVENT\_TABLE()}}
+{\footnotesize\ttfamily wx\+B\+E\+G\+I\+N\+\_\+\+E\+V\+E\+N\+T\+\_\+\+T\+A\+B\+LE (\begin{DoxyParamCaption}\item[{\hyperlink{class_main_window}{Main\+Window}}]{,  }\item[{wx\+Frame}]{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ultra64_8cpp_af4da478f031198d4059586257711913e}\label{ultra64_8cpp_af4da478f031198d4059586257711913e}} 
+\index{ultra64.\+cpp@{ultra64.\+cpp}!wx\+E\+N\+D\+\_\+\+E\+V\+E\+N\+T\+\_\+\+T\+A\+B\+LE@{wx\+E\+N\+D\+\_\+\+E\+V\+E\+N\+T\+\_\+\+T\+A\+B\+LE}}
+\index{wx\+E\+N\+D\+\_\+\+E\+V\+E\+N\+T\+\_\+\+T\+A\+B\+LE@{wx\+E\+N\+D\+\_\+\+E\+V\+E\+N\+T\+\_\+\+T\+A\+B\+LE}!ultra64.\+cpp@{ultra64.\+cpp}}
+\subsubsection{\texorpdfstring{wx\+E\+N\+D\+\_\+\+E\+V\+E\+N\+T\+\_\+\+T\+A\+B\+L\+E()}{wxEND\_EVENT\_TABLE()}}
+{\footnotesize\ttfamily wx\+Frame wx\+E\+N\+D\+\_\+\+E\+V\+E\+N\+T\+\_\+\+T\+A\+B\+LE (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{ultra64_8cpp_a677caae84e52c421b81b49cb6a69ef0a}\label{ultra64_8cpp_a677caae84e52c421b81b49cb6a69ef0a}} 
+\index{ultra64.\+cpp@{ultra64.\+cpp}!cpu@{cpu}}
+\index{cpu@{cpu}!ultra64.\+cpp@{ultra64.\+cpp}}
+\subsubsection{\texorpdfstring{cpu}{cpu}}
+{\footnotesize\ttfamily \hyperlink{classultra64_1_1r4300}{ultra64\+::r4300}$\ast$ cpu = new \hyperlink{classultra64_1_1r4300}{ultra64\+::r4300}()}
+
+\mbox{\Hypertarget{ultra64_8cpp_ad2faab063b0f86f630bf350495d65c18}\label{ultra64_8cpp_ad2faab063b0f86f630bf350495d65c18}} 
+\index{ultra64.\+cpp@{ultra64.\+cpp}!mmu@{mmu}}
+\index{mmu@{mmu}!ultra64.\+cpp@{ultra64.\+cpp}}
+\subsubsection{\texorpdfstring{mmu}{mmu}}
+{\footnotesize\ttfamily \hyperlink{classultra64_1_1_m_m_u}{ultra64\+::\+M\+MU}$\ast$ mmu = new \hyperlink{classultra64_1_1_m_m_u}{ultra64\+::\+M\+MU}()}
+
+\mbox{\Hypertarget{ultra64_8cpp_a40c33e14c30c42b41f1f4cbe2cb4e3b7}\label{ultra64_8cpp_a40c33e14c30c42b41f1f4cbe2cb4e3b7}} 
+\index{ultra64.\+cpp@{ultra64.\+cpp}!pif\+\_\+rom@{pif\+\_\+rom}}
+\index{pif\+\_\+rom@{pif\+\_\+rom}!ultra64.\+cpp@{ultra64.\+cpp}}
+\subsubsection{\texorpdfstring{pif\+\_\+rom}{pif\_rom}}
+{\footnotesize\ttfamily \hyperlink{classultra64_1_1_p_i_f___r_o_m}{ultra64\+::\+P\+I\+F\+\_\+\+R\+OM}$\ast$ pif\+\_\+rom}
+
+\mbox{\Hypertarget{ultra64_8cpp_a67d846c30b517df296af4adaf2a73851}\label{ultra64_8cpp_a67d846c30b517df296af4adaf2a73851}} 
+\index{ultra64.\+cpp@{ultra64.\+cpp}!rom@{rom}}
+\index{rom@{rom}!ultra64.\+cpp@{ultra64.\+cpp}}
+\subsubsection{\texorpdfstring{rom}{rom}}
+{\footnotesize\ttfamily \hyperlink{classultra64_1_1_r_o_m}{ultra64\+::\+R\+OM}$\ast$ rom}
+
+\mbox{\Hypertarget{ultra64_8cpp_a7d3e0d2c4dfd255c476715e9860f19b8}\label{ultra64_8cpp_a7d3e0d2c4dfd255c476715e9860f19b8}} 
+\index{ultra64.\+cpp@{ultra64.\+cpp}!rsp@{rsp}}
+\index{rsp@{rsp}!ultra64.\+cpp@{ultra64.\+cpp}}
+\subsubsection{\texorpdfstring{rsp}{rsp}}
+{\footnotesize\ttfamily \hyperlink{classultra64_1_1rsp}{ultra64\+::rsp}$\ast$ rsp = new \hyperlink{classultra64_1_1rsp}{ultra64\+::rsp}()}
+

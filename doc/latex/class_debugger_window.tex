@@ -1,0 +1,89 @@
+\hypertarget{class_debugger_window}{}\section{Debugger\+Window Class Reference}
+\label{class_debugger_window}\index{Debugger\+Window@{Debugger\+Window}}
+
+
+{\ttfamily \#include $<$ultra64.\+h$>$}
+
+Inheritance diagram for Debugger\+Window\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_debugger_window}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_debugger_window_ae72a6bed32d587f5dc4d301242ae5720}{Debugger\+Window} (wx\+Window $\ast$parent, const wx\+String \&title, const wx\+Point \&pos, const wx\+Size \&size)
+\item 
+\hyperlink{class_debugger_window_a59bb9cc5a75d6d953d940c112c5a38a3}{$\sim$\+Debugger\+Window} ()
+\item 
+void \hyperlink{class_debugger_window_a58b244eaf8947c48629eca294a4aa37b}{view} (uint32\+\_\+t start\+\_\+addr, uint32\+\_\+t end\+\_\+addr)
+\item 
+void \hyperlink{class_debugger_window_a00a164c597b3faa9c69360e60cb55cf6}{On\+C\+P\+U\+Step} (wx\+Command\+Event \&event)
+\item 
+\hyperlink{class_debugger_window_a4ec20c97fe9716957caf2d4c19cdaff4}{wx\+D\+E\+C\+L\+A\+R\+E\+\_\+\+E\+V\+E\+N\+T\+\_\+\+T\+A\+B\+LE} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+wx\+List\+Box $\ast$ \hyperlink{class_debugger_window_a5907a83225613994ce1bf78e170f3e69}{memory\+\_\+listbox} = N\+U\+LL
+\item 
+wx\+Button $\ast$ \hyperlink{class_debugger_window_a8cbfc7ff4b60b4ce45f94af2771e222a}{cpu\+\_\+step} = N\+U\+LL
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_debugger_window_ae72a6bed32d587f5dc4d301242ae5720}\label{class_debugger_window_ae72a6bed32d587f5dc4d301242ae5720}} 
+\index{Debugger\+Window@{Debugger\+Window}!Debugger\+Window@{Debugger\+Window}}
+\index{Debugger\+Window@{Debugger\+Window}!Debugger\+Window@{Debugger\+Window}}
+\subsubsection{\texorpdfstring{Debugger\+Window()}{DebuggerWindow()}}
+{\footnotesize\ttfamily Debugger\+Window\+::\+Debugger\+Window (\begin{DoxyParamCaption}\item[{wx\+Window $\ast$}]{parent,  }\item[{const wx\+String \&}]{title,  }\item[{const wx\+Point \&}]{pos,  }\item[{const wx\+Size \&}]{size }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_debugger_window_a59bb9cc5a75d6d953d940c112c5a38a3}\label{class_debugger_window_a59bb9cc5a75d6d953d940c112c5a38a3}} 
+\index{Debugger\+Window@{Debugger\+Window}!````~Debugger\+Window@{$\sim$\+Debugger\+Window}}
+\index{````~Debugger\+Window@{$\sim$\+Debugger\+Window}!Debugger\+Window@{Debugger\+Window}}
+\subsubsection{\texorpdfstring{$\sim$\+Debugger\+Window()}{~DebuggerWindow()}}
+{\footnotesize\ttfamily Debugger\+Window\+::$\sim$\+Debugger\+Window (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_debugger_window_a00a164c597b3faa9c69360e60cb55cf6}\label{class_debugger_window_a00a164c597b3faa9c69360e60cb55cf6}} 
+\index{Debugger\+Window@{Debugger\+Window}!On\+C\+P\+U\+Step@{On\+C\+P\+U\+Step}}
+\index{On\+C\+P\+U\+Step@{On\+C\+P\+U\+Step}!Debugger\+Window@{Debugger\+Window}}
+\subsubsection{\texorpdfstring{On\+C\+P\+U\+Step()}{OnCPUStep()}}
+{\footnotesize\ttfamily void Debugger\+Window\+::\+On\+C\+P\+U\+Step (\begin{DoxyParamCaption}\item[{wx\+Command\+Event \&}]{event }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_debugger_window_a58b244eaf8947c48629eca294a4aa37b}\label{class_debugger_window_a58b244eaf8947c48629eca294a4aa37b}} 
+\index{Debugger\+Window@{Debugger\+Window}!view@{view}}
+\index{view@{view}!Debugger\+Window@{Debugger\+Window}}
+\subsubsection{\texorpdfstring{view()}{view()}}
+{\footnotesize\ttfamily void Debugger\+Window\+::view (\begin{DoxyParamCaption}\item[{uint32\+\_\+t}]{start\+\_\+addr,  }\item[{uint32\+\_\+t}]{end\+\_\+addr }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{class_debugger_window_a4ec20c97fe9716957caf2d4c19cdaff4}\label{class_debugger_window_a4ec20c97fe9716957caf2d4c19cdaff4}} 
+\index{Debugger\+Window@{Debugger\+Window}!wx\+D\+E\+C\+L\+A\+R\+E\+\_\+\+E\+V\+E\+N\+T\+\_\+\+T\+A\+B\+LE@{wx\+D\+E\+C\+L\+A\+R\+E\+\_\+\+E\+V\+E\+N\+T\+\_\+\+T\+A\+B\+LE}}
+\index{wx\+D\+E\+C\+L\+A\+R\+E\+\_\+\+E\+V\+E\+N\+T\+\_\+\+T\+A\+B\+LE@{wx\+D\+E\+C\+L\+A\+R\+E\+\_\+\+E\+V\+E\+N\+T\+\_\+\+T\+A\+B\+LE}!Debugger\+Window@{Debugger\+Window}}
+\subsubsection{\texorpdfstring{wx\+D\+E\+C\+L\+A\+R\+E\+\_\+\+E\+V\+E\+N\+T\+\_\+\+T\+A\+B\+L\+E()}{wxDECLARE\_EVENT\_TABLE()}}
+{\footnotesize\ttfamily Debugger\+Window\+::wx\+D\+E\+C\+L\+A\+R\+E\+\_\+\+E\+V\+E\+N\+T\+\_\+\+T\+A\+B\+LE (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_debugger_window_a8cbfc7ff4b60b4ce45f94af2771e222a}\label{class_debugger_window_a8cbfc7ff4b60b4ce45f94af2771e222a}} 
+\index{Debugger\+Window@{Debugger\+Window}!cpu\+\_\+step@{cpu\+\_\+step}}
+\index{cpu\+\_\+step@{cpu\+\_\+step}!Debugger\+Window@{Debugger\+Window}}
+\subsubsection{\texorpdfstring{cpu\+\_\+step}{cpu\_step}}
+{\footnotesize\ttfamily wx\+Button$\ast$ Debugger\+Window\+::cpu\+\_\+step = N\+U\+LL}
+
+\mbox{\Hypertarget{class_debugger_window_a5907a83225613994ce1bf78e170f3e69}\label{class_debugger_window_a5907a83225613994ce1bf78e170f3e69}} 
+\index{Debugger\+Window@{Debugger\+Window}!memory\+\_\+listbox@{memory\+\_\+listbox}}
+\index{memory\+\_\+listbox@{memory\+\_\+listbox}!Debugger\+Window@{Debugger\+Window}}
+\subsubsection{\texorpdfstring{memory\+\_\+listbox}{memory\_listbox}}
+{\footnotesize\ttfamily wx\+List\+Box$\ast$ Debugger\+Window\+::memory\+\_\+listbox = N\+U\+LL}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{ultra64_8h}{ultra64.\+h}\item 
+src/\hyperlink{ultra64_8cpp}{ultra64.\+cpp}\end{DoxyCompactItemize}
