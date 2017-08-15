@@ -206,9 +206,10 @@ namespace ultra64
 
     opcode_t *r4300::get_instruction(uint32_t addr)
     {
-        if(op_cache[addr] == nullptr) op_cache[addr] = new opcode_t(mmu->read_word(addr));
+        uint32_t instruction = mmu->read_word(addr);
+        if(op_cache[instruction] == nullptr) op_cache[instruction] = new opcode_t(instruction);
 
-        return op_cache[addr];
+        return op_cache[instruction];
     }
 
     opcode_t::opcode_t(uint32_t instruction)
