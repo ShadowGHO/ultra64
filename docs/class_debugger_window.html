@@ -98,7 +98,10 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a8cbfc7ff4b60b4ce45f94af2771e222a"><td class="memItemLeft" align="right" valign="top">wxButton *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_debugger_window.html#a8cbfc7ff4b60b4ce45f94af2771e222a">cpu_step</a> = NULL</td></tr>
 <tr class="separator:a8cbfc7ff4b60b4ce45f94af2771e222a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock">
+<p class="definition">Definition at line <a class="el" href="ultra64_8h_source.html#l00027">27</a> of file <a class="el" href="ultra64_8h_source.html">ultra64.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae72a6bed32d587f5dc4d301242ae5720"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae72a6bed32d587f5dc4d301242ae5720">&#9670;&nbsp;</a></span>DebuggerWindow()</h2>
 
@@ -137,6 +140,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="ultra64_8cpp_source.html#l00043">43</a> of file <a class="el" href="ultra64_8cpp_source.html">ultra64.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        : wxFrame(parent, wxID_ANY, title, pos, size)</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;{</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <a id="a59bb9cc5a75d6d953d940c112c5a38a3"></a>
@@ -154,6 +159,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="ultra64_8cpp_source.html#l00048">48</a> of file <a class="el" href="ultra64_8cpp_source.html">ultra64.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    wxGetApp().debugger = NULL;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -173,6 +180,13 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="ultra64_8cpp_source.html#l00053">53</a> of file <a class="el" href="ultra64_8cpp_source.html">ultra64.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="ultra64_8cpp_source.html#l00204">open_registers()</a>, and <a class="el" href="r4300_8cpp_source.html#l00172">ultra64::r4300::step()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;{</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">try</span></div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    {</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <a class="code" href="ultra64_8cpp.html#a677caae84e52c421b81b49cb6a69ef0a">cpu</a>-&gt;<a class="code" href="classultra64_1_1r4300.html#a708ebf52e731ed7f0bc136827d970a28">step</a>();</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    }</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">catch</span>(std::string e)</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    {</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        wxGetApp().frame-&gt;SetStatusText(e, 0);</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordflow">if</span>(wxGetApp().registers != NULL) <a class="code" href="ultra64_8cpp.html#accff11565f9beef617e6c8933194ac2e">open_registers</a>();</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div><div class="ttc" id="classultra64_1_1r4300_html_a708ebf52e731ed7f0bc136827d970a28"><div class="ttname"><a href="classultra64_1_1r4300.html#a708ebf52e731ed7f0bc136827d970a28">ultra64::r4300::step</a></div><div class="ttdeci">void step()</div><div class="ttdef"><b>Definition:</b> <a href="r4300_8cpp_source.html#l00172">r4300.cpp:172</a></div></div>
+<div class="ttc" id="ultra64_8cpp_html_a677caae84e52c421b81b49cb6a69ef0a"><div class="ttname"><a href="ultra64_8cpp.html#a677caae84e52c421b81b49cb6a69ef0a">cpu</a></div><div class="ttdeci">ultra64::r4300 * cpu</div><div class="ttdef"><b>Definition:</b> <a href="ultra64_8cpp_source.html#l00015">ultra64.cpp:15</a></div></div>
+<div class="ttc" id="ultra64_8cpp_html_accff11565f9beef617e6c8933194ac2e"><div class="ttname"><a href="ultra64_8cpp.html#accff11565f9beef617e6c8933194ac2e">open_registers</a></div><div class="ttdeci">void open_registers()</div><div class="ttdef"><b>Definition:</b> <a href="ultra64_8cpp_source.html#l00204">ultra64.cpp:204</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a58b244eaf8947c48629eca294a4aa37b"></a>
@@ -201,6 +215,15 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="ultra64_8cpp_source.html#l00257">257</a> of file <a class="el" href="ultra64_8cpp_source.html">ultra64.cpp</a>.</p>
+
+<p class="reference">References <a class="el" href="memory_8cpp_source.html#l00101">ultra64::MMU::read_word()</a>, and <a class="el" href="r4300_8cpp_source.html#l00231">ultra64::opcode_t::to_string()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;{</div><div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <span class="keywordtype">char</span> message[1024];</div><div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    std::string msg;</div><div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    uint32_t value, addr = start_addr;</div><div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <a class="code" href="classultra64_1_1opcode__t.html">ultra64::opcode_t</a> *op;</div><div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;</div><div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<span class="preprocessor">#if 0</span></div><div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <span class="keyword">auto</span> start_time = std::chrono::high_resolution_clock::now();</div><div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    <span class="keyword">auto</span> end_time = std::chrono::high_resolution_clock::now();</div><div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    <span class="keyword">auto</span> t = std::chrono::duration_cast&lt;std::chrono::microseconds&gt;(end_time - start_time).count();</div><div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="preprocessor">#endif</span></div><div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;</div><div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <span class="keywordflow">while</span>(addr &lt; end_addr)</div><div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    {</div><div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        <span class="keywordflow">try</span></div><div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        {</div><div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;            value = <a class="code" href="ultra64_8cpp.html#ad2faab063b0f86f630bf350495d65c18">mmu</a>-&gt;<a class="code" href="classultra64_1_1_m_m_u.html#a894a894a4340798c457e7ad41c3dd2ff">read_word</a>(addr);</div><div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;            sprintf(message, <span class="stringliteral">&quot;%.4X %.4X   %.2X %.2X %.2X %.2X   &quot;</span>, (addr &gt;&gt; 16), (addr &amp; 0xFFFF), </div><div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;                   value &gt;&gt; 24, (value &gt;&gt; 16) &amp; 0xFF, (value &gt;&gt; 8) &amp; 0xFF, value &amp; 0xFF);</div><div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;            op = <span class="keyword">new</span> <a class="code" href="classultra64_1_1opcode__t.html">ultra64::opcode_t</a>(value); </div><div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;            msg = message + op-&gt;<a class="code" href="classultra64_1_1opcode__t.html#a1d1f6ce464c46b26af898e41a19c48a8">to_string</a>();</div><div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;            <span class="keyword">delete</span> op;</div><div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;            <a class="code" href="class_debugger_window.html#a5907a83225613994ce1bf78e170f3e69">memory_listbox</a>-&gt;Append(msg.c_str());</div><div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;            addr += 4;</div><div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        }</div><div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;        <span class="keywordflow">catch</span>(std::string e)</div><div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        {</div><div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;            <a class="code" href="class_debugger_window.html#a5907a83225613994ce1bf78e170f3e69">memory_listbox</a>-&gt;Append(e.c_str());</div><div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;            <span class="keywordflow">return</span>;</div><div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        }</div><div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;    }</div><div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;}</div><div class="ttc" id="classultra64_1_1opcode__t_html"><div class="ttname"><a href="classultra64_1_1opcode__t.html">ultra64::opcode_t</a></div><div class="ttdef"><b>Definition:</b> <a href="r4300_8h_source.html#l00012">r4300.h:12</a></div></div>
+<div class="ttc" id="class_debugger_window_html_a5907a83225613994ce1bf78e170f3e69"><div class="ttname"><a href="class_debugger_window.html#a5907a83225613994ce1bf78e170f3e69">DebuggerWindow::memory_listbox</a></div><div class="ttdeci">wxListBox * memory_listbox</div><div class="ttdef"><b>Definition:</b> <a href="ultra64_8h_source.html#l00032">ultra64.h:32</a></div></div>
+<div class="ttc" id="classultra64_1_1_m_m_u_html_a894a894a4340798c457e7ad41c3dd2ff"><div class="ttname"><a href="classultra64_1_1_m_m_u.html#a894a894a4340798c457e7ad41c3dd2ff">ultra64::MMU::read_word</a></div><div class="ttdeci">uint32_t read_word(uint32_t addr)</div><div class="ttdef"><b>Definition:</b> <a href="memory_8cpp_source.html#l00101">memory.cpp:101</a></div></div>
+<div class="ttc" id="ultra64_8cpp_html_ad2faab063b0f86f630bf350495d65c18"><div class="ttname"><a href="ultra64_8cpp.html#ad2faab063b0f86f630bf350495d65c18">mmu</a></div><div class="ttdeci">ultra64::MMU * mmu</div><div class="ttdef"><b>Definition:</b> <a href="ultra64_8cpp_source.html#l00014">ultra64.cpp:14</a></div></div>
+<div class="ttc" id="classultra64_1_1opcode__t_html_a1d1f6ce464c46b26af898e41a19c48a8"><div class="ttname"><a href="classultra64_1_1opcode__t.html#a1d1f6ce464c46b26af898e41a19c48a8">ultra64::opcode_t::to_string</a></div><div class="ttdeci">std::string to_string()</div><div class="ttdef"><b>Definition:</b> <a href="r4300_8cpp_source.html#l00231">r4300.cpp:231</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="a4ec20c97fe9716957caf2d4c19cdaff4"></a>
@@ -233,6 +256,8 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="ultra64_8h_source.html#l00034">34</a> of file <a class="el" href="ultra64_8h_source.html">ultra64.h</a>.</p>
+
 </div>
 </div>
 <a id="a5907a83225613994ce1bf78e170f3e69"></a>
@@ -247,11 +272,13 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p class="definition">Definition at line <a class="el" href="ultra64_8h_source.html#l00032">32</a> of file <a class="el" href="ultra64_8h_source.html">ultra64.h</a>.</p>
+
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>include/<a class="el" href="ultra64_8h_source.html">ultra64.h</a></li>
-<li>src/<a class="el" href="ultra64_8cpp.html">ultra64.cpp</a></li>
+<li>src/<a class="el" href="ultra64_8cpp_source.html">ultra64.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
