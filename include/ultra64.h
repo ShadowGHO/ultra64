@@ -31,8 +31,12 @@ class DebuggerWindow: public wxFrame
     ~DebuggerWindow();
     wxListBox *memory_listbox = NULL;
     void view(uint32_t start_addr, uint32_t end_addr);
+    wxTextCtrl *debugger_pc = NULL;
     wxButton *cpu_step = NULL;
     void OnCPUStep(wxCommandEvent &event);
+    wxTextCtrl *cpu_steps_count = NULL;
+    wxButton *cpu_steps = NULL;
+    void OnCPUSteps(wxCommandEvent &event);
     wxDECLARE_EVENT_TABLE();
 };
 
@@ -54,9 +58,12 @@ enum
     ID_debug_rom = 11,
     ID_debug_registers = 12,
 
-    BUTTON_cpu_step = 20
+    BUTTON_cpu_step = 20,
+    BUTTON_cpu_steps = 21
 };
 
 const int ID_MEMORY_LISTBOX = 100;
 const int ID_REGISTERS_LISTBOX = 101;
+const int ID_CPU_STEP_COUNT = 102;
+const int ID_DEBUGGER_PC = 103;
 #endif

@@ -36,7 +36,6 @@ namespace ultra64
         r4300();
         ~r4300();
         void step();
-        void steps(uint32_t steps);
         opcode_t *get_instruction(uint32_t addr);
         uint32_t get_PC();
         uint64_t get_GPR(uint8_t reg);

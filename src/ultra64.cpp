@@ -29,6 +29,7 @@ wxEND_EVENT_TABLE()
 
 wxBEGIN_EVENT_TABLE(DebuggerWindow, wxFrame)
     EVT_BUTTON(BUTTON_cpu_step, DebuggerWindow::OnCPUStep)
+    EVT_BUTTON(BUTTON_cpu_steps, DebuggerWindow::OnCPUSteps)
 wxEND_EVENT_TABLE()
 
 wxIMPLEMENT_APP(wxUltra64);
@@ -60,6 +61,41 @@ void DebuggerWindow::OnCPUStep(wxCommandEvent& event)
     {
         wxGetApp().frame->SetStatusText(e, 0);
     }
+
+    char message[1024];
+    sprintf(message, "0x%.4X %.4X", cpu->get_PC() >> 16, cpu->get_PC() & 0xFFFF);
+    debugger_pc->Clear();
+    debugger_pc->AppendText(message);
+
+    if(wxGetApp().registers != NULL) open_registers();
+}
+
+void DebuggerWindow::OnCPUSteps(wxCommandEvent& event)
+{
+    wxString contents = cpu_steps_count->GetValue();
+    uint32_t steps = wxAtoi(contents), count = 0;
+
+    char message[1024];
+    sprintf(message, "%d", steps);
+    cpu_steps_count->Clear();
+    cpu_steps_count->AppendText(message);
+
+    while(count < steps)
+    {
+        try
+        {
+            cpu->step();
+        }
+        catch(std::string e)
+        {
+            wxGetApp().frame->SetStatusText(e, 0);
+        }
+        count++;
+    }
+
+    sprintf(message, "0x%.4X %.4X", cpu->get_PC() >> 16, cpu->get_PC() & 0xFFFF);
+    debugger_pc->Clear();
+    debugger_pc->AppendText(message);
 
     if(wxGetApp().registers != NULL) open_registers();
 }
@@ -197,8 +233,17 @@ void open_debugger()
       wxPoint(20, 30), wxSize(550, 380)); 
     wxGetApp().debugger->memory_listbox->SetFont(mem_font);
 
+    wxGetApp().debugger->debugger_pc = new wxTextCtrl(wxGetApp().debugger, ID_DEBUGGER_PC, "0x0000 0000",
+                                                          wxPoint(580, 30), wxSize(90, 25), 0);
+
     wxGetApp().debugger->cpu_step = new wxButton(wxGetApp().debugger, BUTTON_cpu_step, _T("Step"), 
-                                                 wxPoint(580, 30), wxDefaultSize, 0);
+                                                 wxPoint(580, 60), wxDefaultSize, 0);
+
+    wxGetApp().debugger->cpu_steps_count = new wxTextCtrl(wxGetApp().debugger, ID_CPU_STEP_COUNT, "2",
+                                                          wxPoint(580, 110), wxSize(90, 25), 0);
+
+    wxGetApp().debugger->cpu_steps = new wxButton(wxGetApp().debugger, BUTTON_cpu_steps, _T("Multi-step"),
+                                                  wxPoint(580, 140), wxDefaultSize, 0);
 }
 
 void open_registers()
@@ -245,7 +290,7 @@ void MainWindow::OnDebugRegisters(wxCommandEvent &event)
 void MainWindow::OnDebugPIFROM(wxCommandEvent& event)
 {
     open_debugger();
-    wxGetApp().debugger->view(0x1FC00000, 0x1FC07BF);
+    wxGetApp().debugger->view(0x1FC00000, 0x1FC007BF);
 }
 
 void MainWindow::OnDebugROM(wxCommandEvent& event)
@@ -260,6 +305,10 @@ void DebuggerWindow::view(uint32_t start_addr, uint32_t end_addr)
     std::string msg;
     uint32_t value, addr = start_addr;
     ultra64::opcode_t *op;
+
+    sprintf(message, "0x%.4X %.4X", cpu->get_PC() >> 16, cpu->get_PC() & 0xFFFF);
+    debugger_pc->Clear();
+    debugger_pc->AppendText(message);
 
 #if 0
     auto start_time = std::chrono::high_resolution_clock::now();
@@ -278,12 +327,12 @@ void DebuggerWindow::view(uint32_t start_addr, uint32_t end_addr)
             msg = message + op->to_string();
             delete op;
             memory_listbox->Append(msg.c_str());
-            addr += 4;
         }
         catch(std::string e)
         {
             memory_listbox->Append(e.c_str());
             return;
         }
+        addr += 4;
     }
 }

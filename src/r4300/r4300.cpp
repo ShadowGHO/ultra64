@@ -184,26 +184,6 @@ namespace ultra64
         CP0[9] += 2;
     }
 
-    void r4300::steps(uint32_t steps)
-    {
-        uint32_t start = CP0[9];
-        opcode_t *op;
-
-        while((CP0[9] / 2) < (start + steps))
-        {
-            try
-            {
-                op = get_instruction(PC);
-                opcode[op->opcode](this, op);
-            }
-            catch(std::string e)
-            {
-                throw e;
-            }
-            CP0[9] += 2;
-        }
-    }
-
     opcode_t *r4300::get_instruction(uint32_t addr)
     {
         uint32_t instruction = mmu->read_word(addr);
