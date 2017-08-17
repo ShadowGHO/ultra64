@@ -2,6 +2,7 @@ var searchData=
 [
   ['onabout',['OnAbout',['../class_main_window.html#afa16bbfe7c1f9f4ba9192210ca68d996',1,'MainWindow']]],
   ['oncpustep',['OnCPUStep',['../class_debugger_window.html#a00a164c597b3faa9c69360e60cb55cf6',1,'DebuggerWindow']]],
+  ['oncpusteps',['OnCPUSteps',['../class_debugger_window.html#aa55764ee2525bfbefc0b4e59f3a5d3b6',1,'DebuggerWindow']]],
   ['ondebugpifrom',['OnDebugPIFROM',['../class_main_window.html#ad417cf49adddf2caaab6b42eaca297e3',1,'MainWindow']]],
   ['ondebugregisters',['OnDebugRegisters',['../class_main_window.html#a19dd4cc763eefb616417f390a5ecd1fa',1,'MainWindow']]],
   ['ondebugrom',['OnDebugROM',['../class_main_window.html#af112afb589538613e918372017a64084',1,'MainWindow']]],

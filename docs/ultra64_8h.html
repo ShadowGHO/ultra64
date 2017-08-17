@@ -94,7 +94,8 @@ Enumerations</h2></td></tr>
 <a class="el" href="ultra64_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba1623a6292884b1445948dda00872f482">ID_debug_rom</a> = 11, 
 <br />
 &#160;&#160;<a class="el" href="ultra64_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba2ca5aaf6cd3ab604a863e6bea3173d26">ID_debug_registers</a> = 12, 
-<a class="el" href="ultra64_8h.html#a06fc87d81c62e9abb8790b6e5713c55baf12be5a8e07b1d1f750c6716d2ee2c4f">BUTTON_cpu_step</a> = 20
+<a class="el" href="ultra64_8h.html#a06fc87d81c62e9abb8790b6e5713c55baf12be5a8e07b1d1f750c6716d2ee2c4f">BUTTON_cpu_step</a> = 20, 
+<a class="el" href="ultra64_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba8ccf494208db44e5ea74be49d579841a">BUTTON_cpu_steps</a> = 21
 <br />
  }</td></tr>
 <tr class="separator:a06fc87d81c62e9abb8790b6e5713c55b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -105,6 +106,10 @@ Variables</h2></td></tr>
 <tr class="separator:a4807be450e4c28955ba3434eeca35e1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f3c967377f2a3a9214b2474a1b0b41b"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ultra64_8h.html#a1f3c967377f2a3a9214b2474a1b0b41b">ID_REGISTERS_LISTBOX</a> = 101</td></tr>
 <tr class="separator:a1f3c967377f2a3a9214b2474a1b0b41b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a648ea8ec50c2bf49f313c249f9734662"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ultra64_8h.html#a648ea8ec50c2bf49f313c249f9734662">ID_CPU_STEP_COUNT</a> = 102</td></tr>
+<tr class="separator:a648ea8ec50c2bf49f313c249f9734662"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9fe8174820895f5c9ce66448f8b90ee"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="ultra64_8h.html#af9fe8174820895f5c9ce66448f8b90ee">ID_DEBUGGER_PC</a> = 103</td></tr>
+<tr class="separator:af9fe8174820895f5c9ce66448f8b90ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
 <a id="a06fc87d81c62e9abb8790b6e5713c55b"></a>
@@ -125,19 +130,57 @@ Variables</h2></td></tr>
 <tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba1623a6292884b1445948dda00872f482"></a>ID_debug_rom&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba2ca5aaf6cd3ab604a863e6bea3173d26"></a>ID_debug_registers&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55baf12be5a8e07b1d1f750c6716d2ee2c4f"></a>BUTTON_cpu_step&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a06fc87d81c62e9abb8790b6e5713c55ba8ccf494208db44e5ea74be49d579841a"></a>BUTTON_cpu_steps&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="ultra64_8h_source.html#l00048">48</a> of file <a class="el" href="ultra64_8h_source.html">ultra64.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;{</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="ultra64_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba8841173f3b8219650c8a94bd93fa1090">ID_open_pif_rom</a> = 0,</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <a class="code" href="ultra64_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba6b05e9097a6fe61c61e5d101e2af72bd">ID_open_rom</a> = 1,</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="ultra64_8h.html#a06fc87d81c62e9abb8790b6e5713c55baabeeff4136e54bb118b03b308d3f8fcc">ID_debug_pif_rom</a> = 10,</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="ultra64_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba1623a6292884b1445948dda00872f482">ID_debug_rom</a> = 11,</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="ultra64_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba2ca5aaf6cd3ab604a863e6bea3173d26">ID_debug_registers</a> = 12,</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="ultra64_8h.html#a06fc87d81c62e9abb8790b6e5713c55baf12be5a8e07b1d1f750c6716d2ee2c4f">BUTTON_cpu_step</a> = 20</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;};</div><div class="ttc" id="ultra64_8h_html_a06fc87d81c62e9abb8790b6e5713c55ba1623a6292884b1445948dda00872f482"><div class="ttname"><a href="ultra64_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba1623a6292884b1445948dda00872f482">ID_debug_rom</a></div><div class="ttdef"><b>Definition:</b> <a href="ultra64_8h_source.html#l00054">ultra64.h:54</a></div></div>
-<div class="ttc" id="ultra64_8h_html_a06fc87d81c62e9abb8790b6e5713c55ba8841173f3b8219650c8a94bd93fa1090"><div class="ttname"><a href="ultra64_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba8841173f3b8219650c8a94bd93fa1090">ID_open_pif_rom</a></div><div class="ttdef"><b>Definition:</b> <a href="ultra64_8h_source.html#l00050">ultra64.h:50</a></div></div>
-<div class="ttc" id="ultra64_8h_html_a06fc87d81c62e9abb8790b6e5713c55baabeeff4136e54bb118b03b308d3f8fcc"><div class="ttname"><a href="ultra64_8h.html#a06fc87d81c62e9abb8790b6e5713c55baabeeff4136e54bb118b03b308d3f8fcc">ID_debug_pif_rom</a></div><div class="ttdef"><b>Definition:</b> <a href="ultra64_8h_source.html#l00053">ultra64.h:53</a></div></div>
-<div class="ttc" id="ultra64_8h_html_a06fc87d81c62e9abb8790b6e5713c55baf12be5a8e07b1d1f750c6716d2ee2c4f"><div class="ttname"><a href="ultra64_8h.html#a06fc87d81c62e9abb8790b6e5713c55baf12be5a8e07b1d1f750c6716d2ee2c4f">BUTTON_cpu_step</a></div><div class="ttdef"><b>Definition:</b> <a href="ultra64_8h_source.html#l00057">ultra64.h:57</a></div></div>
-<div class="ttc" id="ultra64_8h_html_a06fc87d81c62e9abb8790b6e5713c55ba2ca5aaf6cd3ab604a863e6bea3173d26"><div class="ttname"><a href="ultra64_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba2ca5aaf6cd3ab604a863e6bea3173d26">ID_debug_registers</a></div><div class="ttdef"><b>Definition:</b> <a href="ultra64_8h_source.html#l00055">ultra64.h:55</a></div></div>
-<div class="ttc" id="ultra64_8h_html_a06fc87d81c62e9abb8790b6e5713c55ba6b05e9097a6fe61c61e5d101e2af72bd"><div class="ttname"><a href="ultra64_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba6b05e9097a6fe61c61e5d101e2af72bd">ID_open_rom</a></div><div class="ttdef"><b>Definition:</b> <a href="ultra64_8h_source.html#l00051">ultra64.h:51</a></div></div>
+<p class="definition">Definition at line <a class="el" href="ultra64_8h_source.html#l00052">52</a> of file <a class="el" href="ultra64_8h_source.html">ultra64.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;{</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="ultra64_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba8841173f3b8219650c8a94bd93fa1090">ID_open_pif_rom</a> = 0,</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <a class="code" href="ultra64_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba6b05e9097a6fe61c61e5d101e2af72bd">ID_open_rom</a> = 1,</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="ultra64_8h.html#a06fc87d81c62e9abb8790b6e5713c55baabeeff4136e54bb118b03b308d3f8fcc">ID_debug_pif_rom</a> = 10,</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <a class="code" href="ultra64_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba1623a6292884b1445948dda00872f482">ID_debug_rom</a> = 11,</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="ultra64_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba2ca5aaf6cd3ab604a863e6bea3173d26">ID_debug_registers</a> = 12,</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="ultra64_8h.html#a06fc87d81c62e9abb8790b6e5713c55baf12be5a8e07b1d1f750c6716d2ee2c4f">BUTTON_cpu_step</a> = 20,</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="ultra64_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba8ccf494208db44e5ea74be49d579841a">BUTTON_cpu_steps</a> = 21</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;};</div><div class="ttc" id="ultra64_8h_html_a06fc87d81c62e9abb8790b6e5713c55ba1623a6292884b1445948dda00872f482"><div class="ttname"><a href="ultra64_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba1623a6292884b1445948dda00872f482">ID_debug_rom</a></div><div class="ttdef"><b>Definition:</b> <a href="ultra64_8h_source.html#l00058">ultra64.h:58</a></div></div>
+<div class="ttc" id="ultra64_8h_html_a06fc87d81c62e9abb8790b6e5713c55ba8841173f3b8219650c8a94bd93fa1090"><div class="ttname"><a href="ultra64_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba8841173f3b8219650c8a94bd93fa1090">ID_open_pif_rom</a></div><div class="ttdef"><b>Definition:</b> <a href="ultra64_8h_source.html#l00054">ultra64.h:54</a></div></div>
+<div class="ttc" id="ultra64_8h_html_a06fc87d81c62e9abb8790b6e5713c55ba8ccf494208db44e5ea74be49d579841a"><div class="ttname"><a href="ultra64_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba8ccf494208db44e5ea74be49d579841a">BUTTON_cpu_steps</a></div><div class="ttdef"><b>Definition:</b> <a href="ultra64_8h_source.html#l00062">ultra64.h:62</a></div></div>
+<div class="ttc" id="ultra64_8h_html_a06fc87d81c62e9abb8790b6e5713c55baabeeff4136e54bb118b03b308d3f8fcc"><div class="ttname"><a href="ultra64_8h.html#a06fc87d81c62e9abb8790b6e5713c55baabeeff4136e54bb118b03b308d3f8fcc">ID_debug_pif_rom</a></div><div class="ttdef"><b>Definition:</b> <a href="ultra64_8h_source.html#l00057">ultra64.h:57</a></div></div>
+<div class="ttc" id="ultra64_8h_html_a06fc87d81c62e9abb8790b6e5713c55baf12be5a8e07b1d1f750c6716d2ee2c4f"><div class="ttname"><a href="ultra64_8h.html#a06fc87d81c62e9abb8790b6e5713c55baf12be5a8e07b1d1f750c6716d2ee2c4f">BUTTON_cpu_step</a></div><div class="ttdef"><b>Definition:</b> <a href="ultra64_8h_source.html#l00061">ultra64.h:61</a></div></div>
+<div class="ttc" id="ultra64_8h_html_a06fc87d81c62e9abb8790b6e5713c55ba2ca5aaf6cd3ab604a863e6bea3173d26"><div class="ttname"><a href="ultra64_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba2ca5aaf6cd3ab604a863e6bea3173d26">ID_debug_registers</a></div><div class="ttdef"><b>Definition:</b> <a href="ultra64_8h_source.html#l00059">ultra64.h:59</a></div></div>
+<div class="ttc" id="ultra64_8h_html_a06fc87d81c62e9abb8790b6e5713c55ba6b05e9097a6fe61c61e5d101e2af72bd"><div class="ttname"><a href="ultra64_8h.html#a06fc87d81c62e9abb8790b6e5713c55ba6b05e9097a6fe61c61e5d101e2af72bd">ID_open_rom</a></div><div class="ttdef"><b>Definition:</b> <a href="ultra64_8h_source.html#l00055">ultra64.h:55</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Variable Documentation</h2>
+<a id="a648ea8ec50c2bf49f313c249f9734662"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a648ea8ec50c2bf49f313c249f9734662">&#9670;&nbsp;</a></span>ID_CPU_STEP_COUNT</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int ID_CPU_STEP_COUNT = 102</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ultra64_8h_source.html#l00067">67</a> of file <a class="el" href="ultra64_8h_source.html">ultra64.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="ultra64_8cpp_source.html#l00216">open_debugger()</a>.</p>
+
+</div>
+</div>
+<a id="af9fe8174820895f5c9ce66448f8b90ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9fe8174820895f5c9ce66448f8b90ee">&#9670;&nbsp;</a></span>ID_DEBUGGER_PC</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const int ID_DEBUGGER_PC = 103</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="ultra64_8h_source.html#l00068">68</a> of file <a class="el" href="ultra64_8h_source.html">ultra64.h</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="ultra64_8cpp_source.html#l00216">open_debugger()</a>.</p>
+
+</div>
+</div>
 <a id="a4807be450e4c28955ba3434eeca35e1d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4807be450e4c28955ba3434eeca35e1d">&#9670;&nbsp;</a></span>ID_MEMORY_LISTBOX</h2>
 
@@ -150,9 +193,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ultra64_8h_source.html#l00060">60</a> of file <a class="el" href="ultra64_8h_source.html">ultra64.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ultra64_8h_source.html#l00065">65</a> of file <a class="el" href="ultra64_8h_source.html">ultra64.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ultra64_8cpp_source.html#l00180">open_debugger()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ultra64_8cpp_source.html#l00216">open_debugger()</a>.</p>
 
 </div>
 </div>
@@ -168,9 +211,9 @@ Variables</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="ultra64_8h_source.html#l00061">61</a> of file <a class="el" href="ultra64_8h_source.html">ultra64.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="ultra64_8h_source.html#l00066">66</a> of file <a class="el" href="ultra64_8h_source.html">ultra64.h</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ultra64_8cpp_source.html#l00204">open_registers()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ultra64_8cpp_source.html#l00249">open_registers()</a>.</p>
 
 </div>
 </div>
