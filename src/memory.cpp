@@ -28,8 +28,7 @@ namespace ultra64
         }
         catch(std::string e)
         {
-            std::cout << e << std::endl;
-            exit(-1);
+            throw e;
         }
          
         uint8_t *p = (uint8_t *)s.ptr;
@@ -47,8 +46,7 @@ namespace ultra64
         }
         catch(std::string e)
         {
-            std::cout << e << std::endl;
-            exit(-1);
+            throw e;
         }
 
         uint8_t *p = (uint8_t *)s.ptr;
@@ -65,8 +63,7 @@ namespace ultra64
         }
         catch(std::string e)
         {
-            std::cout << e << std::endl;
-            exit(-1);
+            throw e;
         }
 
         uint32_t pointer = phys_addr - s.offset;
@@ -87,8 +84,7 @@ namespace ultra64
         }
         catch(std::string e)
         {
-            std::cout << e << std::endl;
-            exit(-1);
+            throw e;
         }
 
         uint32_t pointer = phys_addr - s.offset;
@@ -109,8 +105,7 @@ namespace ultra64
         }
         catch(std::string e)
         {
-            std::cout << e << std::endl;
-            exit(-1);
+            throw e;
         }
 
         uint32_t pointer = phys_addr - s.offset;
@@ -142,8 +137,7 @@ namespace ultra64
         }
         catch(std::string e)
         {
-            std::cout << e << std::endl;
-            exit(-1);
+            throw e;
         }
 
         uint32_t pointer = phys_addr - s.offset;
