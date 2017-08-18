@@ -243,7 +243,7 @@ namespace ultra64
             return section;
         }
 
-        if((addr >= 0x04700000) && (addr <= 0x0440001F))
+        if((addr >= 0x04700000) && (addr <= 0x0470001F))
         {
             section.offset = 0x04700000;
             section.ptr = ri_registers;
@@ -258,7 +258,7 @@ namespace ultra64
         }
 
         if((addr >= 0x10000000) && (addr <=0x1FBFFFFF))
-	{
+        {
             section.offset = 0x10000000;
             if((addr - section.offset) > rom_sz)
             {
@@ -266,9 +266,9 @@ namespace ultra64
                 std::string e = ss.str();
                 throw e;
             }
-	    section.ptr = rom;
+            section.ptr = rom;
             return section;
-	}
+        }
 
         if((addr >= 0x1FC00000) && (0x1FC007BF))
         {

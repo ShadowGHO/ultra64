@@ -52,6 +52,7 @@ namespace ultra64
 
 extern ultra64::MMU *mmu;
 
+/** RSP status register */
 #define SP_STATUS_REG		0x04040010
 
 /** RSP Halt */
