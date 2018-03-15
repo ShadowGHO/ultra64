@@ -1,5 +1,5 @@
 #ifndef _ULTRA64_R4300_H
-#define _ULTRA64_R4300_h
+#define _ULTRA64_R4300_H
 
 #include <cstdint>
 #include <unordered_map>
