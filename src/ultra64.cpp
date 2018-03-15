@@ -271,7 +271,7 @@ void open_registers()
     uint32_t count = 0;
     while(count < 32)
     {
-        sprintf(temp, "GPR[%.2d]=0x%.8llX  GPR[%.2d]=0x%.8llX  CP0[%.2d]=0x%.8llX  CP0[%.2d]=0x%.8llX",
+        sprintf(temp, "GPR[%.2d]=0x%.8luX  GPR[%.2d]=0x%.8luX  CP0[%.2d]=0x%.8luX  CP0[%.2d]=0x%.8luX",
                 count, cpu->get_GPR(count), count + 1, cpu->get_GPR(count + 1),
                 count, cpu->get_CP0(count), count + 1, cpu->get_CP0(count + 1));
         wxGetApp().registers->registers_listbox->Append(temp);
